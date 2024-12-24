@@ -24,10 +24,15 @@
                 <Button x:Name="GetAQIButton" Content="取得AQI" Width="100" Height="35" Margin="20,0,0,0" FontFamily="DFKai-SB" FontSize="16" Click="GetAQIButton_Click"/>
             </StackPanel>
         </StackPanel>
-        <TextBox x:Name="ContentTextBox" Grid.Row="1" Grid.Column="0" Background="#FFFDF5BB" FontFamily="DFKai-SB"/>
-        <GridSplitter Grid.Row="1" Grid.Column="1" Width="3" Background="#FFABA8A8" HorizontalAlignment="Center" Cursor="SizeWE"/>
+        <TextBox x:Name="ContentTextBox" Grid.Row="1" Grid.Column="0" Background="#FFFDF5BB" FontFamily="DFKai-SB" FontSize="14"/>
+        <GridSplitter Grid.Row="1" Grid.Column="1" Width="3" Background="#FFABA8A8" HorizontalAlignment="Center"/>
         <Grid Grid.Row="1" Grid.Column="2" Background="#FFCCE1F7">
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
         </Grid>
         <StatusBar Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
             <StatusBarItem>
