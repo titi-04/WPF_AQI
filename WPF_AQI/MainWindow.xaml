@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_AQI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1000" Width="1200">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="500*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="500*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Vertical" Height="80" Width="Auto" Background="#FFD7EDC2" >
+            <Label Content="每小時提供各測站之空氣品質(AQI)" FontFamily="DFKai-SB" FontSize="18"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="UrlTextBox" Width="1000" Height="35" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="30,0,0,0" FontFamily="Comic Sans MS" />
+                <Button x:Name="GetAQIButton" Content="取得AQI" Width="100" Height="35" Margin="20,0,0,0" FontFamily="DFKai-SB" FontSize="16" Click="GetAQIButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+        <TextBox x:Name="ContentTextBox" Grid.Row="1" Grid.Column="0" Background="#FFFDF5BB" FontFamily="DFKai-SB"/>
+        <GridSplitter Grid.Row="1" Grid.Column="1" Width="3" Background="#FFABA8A8" HorizontalAlignment="Center" Cursor="SizeWE"/>
+        <Grid Grid.Row="1" Grid.Column="2" Background="#FFCCE1F7">
+            
+        </Grid>
+        <StatusBar Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+            <StatusBarItem>
+                <TextBlock x:Name="statusTextBlock" Text="Ready" Margin="100,0,0,0" FontFamily="DFKai-SB" FontSize="14"/>
+            </StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>
