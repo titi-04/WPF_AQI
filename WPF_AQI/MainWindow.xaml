@@ -35,10 +35,10 @@
                 <RowDefinition />
             </Grid.RowDefinitions>
             <Border Grid.Row="0" BorderBrush="Red" BorderThickness="1" Margin="2,2,2,2">
-                <DataGrid x:Name="RecordDataGrid" AutoGenerateColumns="True" LoadingRow="RecordDataGrid_LoadingRow" IsReadOnly="True" SelectionChanged="RecordDataGrid_SelectionChanged"/>
+                <DataGrid x:Name="RecordDataGrid" AutoGenerateColumns="True" LoadingRow="RecordDataGrid_LoadingRow" IsReadOnly="True" SelectionChanged="RecordDataGrid_SelectionChanged" FontFamily="DFKai-SB" />
             </Border>
             <GridSplitter Grid.Row="1" Height="5" Background="#FFABA8A8" VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
-            <Border Grid.Row="2" BorderBrush="Blue" BorderThickness="1" Margin="2,2,2,2">
+            <Border Grid.Row="2" BorderBrush="Blue" BorderThickness="1" Margin="2,2,2,2" >
                 <WrapPanel x:Name="DataWrapPanel" Orientation="Horizontal" Margin="5,5,5,5"/>
             </Border>
             <Border Grid.Row="3" BorderBrush="Green" BorderThickness="1" Margin="2,2,2,2">

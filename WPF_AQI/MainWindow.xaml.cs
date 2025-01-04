@@ -59,9 +59,10 @@ namespace WPF_AQI
                             Content = field.info.label,
                             Tag = field.id,
                             Margin = new Thickness(3),
-                            FontSize = 16,
+                            FontSize = 14,
+                            FontFamily = new System.Windows.Media.FontFamily("標楷體"),
                             FontWeight = FontWeights.Bold,
-                            Width = 150
+                            Width = 220
                         };
                         cb.Checked += UpdataChart;
                         cb.Unchecked += UpdataChart;
