@@ -6,7 +6,7 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:local="clr-namespace:WPF_AQI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1000" Width="1200">
+        Title="空氣品質指標AQI" Height="1000" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
