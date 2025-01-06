@@ -55,7 +55,7 @@
 
     public class AQIData
     {
-        public List<Field> fields { get; set; }
+        public List<Field> fields { get; set; }//產生CheckBox
         public string resource_id { get; set; }
         public Extras __extras { get; set; }
         public bool include_total { get; set; }
@@ -64,6 +64,6 @@
         public string limit { get; set; }
         public string offset { get; set; }
         public Links _links { get; set; }
-        public List<Record> records { get; set; }
+        public List<Record> records { get; set; }//產生一筆一筆的記錄
     }
 }
